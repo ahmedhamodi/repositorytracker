@@ -1,0 +1,167 @@
+/* Favourites Panel and Header */
+
+.favourites {
+  background-color: #F2ECFD;
+  height: 100%;
+  padding: 48px;
+  min-width: 440px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-device-width : 1024px)  {
+  .favourites {
+    padding: 16px;
+  }
+}
+
+.header {
+  padding: 30px 0;
+  background-color: #6841E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+}
+
+@media only screen and (max-device-width : 678px)  {
+  .header {
+    padding: 24px;
+    font-size: 24px;
+  }
+}
+
+
+/* Flex Formatting */
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.flex {
+  flex: 1;
+}
+
+
+/* Repository List */
+
+.repo-action-button {
+  color: #6841E8;
+  text-decoration: underline;
+}
+
+.repo-action-button:hover {
+  cursor: pointer;
+}
+
+.repo {
+  width: 100%;
+}
+
+.repo-header, .repo-body-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6px;
+}
+
+.repo-header {
+  font-weight: bold;
+}
+
+.repo-body {
+  margin-top: 16px;
+}
+
+.repo-item {
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.repo-item-name {
+  flex: 2;
+  margin-right: 8px;
+}
+
+.repo-item-language {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.repo-item-tag {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.repo-item-add {
+  flex: 1;
+}
+
+
+/* Search */
+
+.search-container {
+  padding: 48px;
+  min-width: 440px;
+  box-sizing: border-box;
+}
+
+.search {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-input {
+  border: 1px solid #222;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 18px;
+  flex: 1;
+}
+
+.search-button {
+  margin-left: 32px;
+  flex-basis: 160px;
+  background-color: #6841E8;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  opacity: 0.95;
+}
+
+.search-button:active {
+  opacity: 1;
+  background-color: rgb(91, 50, 224);
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+.search-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-device-width : 1024px)  {
+  .search-container {
+    padding: 16px;
+  }
+}
